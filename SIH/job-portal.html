@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal - InsightAlly</title>
+    <link rel="stylesheet" href="modern-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <!-- Header logo link and size -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="insightally.png" alt="InsightAlly Logo">
+                </a>
+            </div>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="alumni-directory.html" class="coming-soon">Alumni Directory</a></li>
+                    <li><a href="networking-hub.html">Networking Hub</a></li>
+                    <li><a href="job-portal.html" class="active">Job Portal</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="success-stories.html" class="coming-soon">Success Stories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="login.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Job Portal</h1>
+            <p class="hero-subtitle">Discover career opportunities and connect with employers through our alumni network</p>
+        </div>
+    </section>
+
+    <!-- Job Portal Options -->
+    <section class="section">
+        <div class="container" style="margin-left: 1.5rem;">
+            <div class="section-title">
+                <h2>What would you like to do?</h2>
+                <p>Choose from the options below to get started</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card job-option-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <h3>Post a Job</h3>
+                    <p>Are you an employer or alumni looking to hire? Post job opportunities and internships for our community.</p>
+                    <ul class="job-benefits">
+                        <li><i class="fas fa-check"></i> Reach qualified candidates</li>
+                        <li><i class="fas fa-check"></i> Free job posting</li>
+                        <li><i class="fas fa-check"></i> Direct alumni network access</li>
+                        <li><i class="fas fa-check"></i> Easy application management</li>
+                    </ul>
+                    <a href="job-add.html" class="btn btn-primary">Post a Job</a>
+                </div>
+                
+                <div class="card job-option-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Find Jobs</h3>
+                    <p>Browse through job opportunities posted by our alumni network and partner companies.</p>
+                    <ul class="job-benefits">
+                        <li><i class="fas fa-check"></i> Curated job listings</li>
+                        <li><i class="fas fa-check"></i> Alumni-recommended positions</li>
+                        <li><i class="fas fa-check"></i> Internship opportunities</li>
+                        <li><i class="fas fa-check"></i> Direct application process</li>
+                    </ul>
+                    <a href="job-avail.html" class="btn btn-primary">Browse Jobs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Jobs Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Opportunities</h2>
+                <p>Latest job postings from our alumni network</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card job-card">
+                    <div class="job-header">
+                        <div class="job-company">
+                            <img src="logojob.png" alt="Tech Corp" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <h3>Software Engineer</h3>
+                                <p class="company-name">Tech Corp</p>
+                            </div>
+                        </div>
+                        <div class="job-type">Full-time</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="job-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>San Francisco, CA</span>
+                        </div>
+                        <div class="job-detail">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>$80,000 - $120,000</span>
+                        </div>
+                        <div class="job-detail">
+                            <i class="fas fa-clock"></i>
+                            <span>Posted 2 days ago</span>
+                        </div>
+                    </div>
+                    <p class="job-description">We're looking for a talented software engineer to join our growing team. Experience with React, Node.js, and cloud platforms preferred.</p>
+                    <div class="job-tags">
+                        <span class="job-tag">React</span>
+                        <span class="job-tag">Node.js</span>
+                        <span class="job-tag">AWS</span>
+                    </div>
+                    <button class="btn btn-primary">Apply Now</button>
+                </div>
+                
+                <div class="card job-card">
+                    <div class="job-header">
+                        <div class="job-company">
+                            <img src="logojob.png" alt="Data Solutions" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <h3>Data Analyst</h3>
+                                <p class="company-name">Data Solutions Inc.</p>
+                            </div>
+                        </div>
+                        <div class="job-type">Full-time</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="job-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>New York, NY</span>
+                        </div>
+                        <div class="job-detail">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>$65,000 - $85,000</span>
+                        </div>
+                        <div class="job-detail">
+                            <i class="fas fa-clock"></i>
+                            <span>Posted 1 week ago</span>
+                        </div>
+                    </div>
+                    <p class="job-description">Join our data team to analyze business metrics and create actionable insights for stakeholders.</p>
+                    <div class="job-tags">
+                        <span class="job-tag">Python</span>
+                        <span class="job-tag">SQL</span>
+                        <span class="job-tag">Tableau</span>
+                    </div>
+                    <button class="btn btn-primary">Apply Now</button>
+                </div>
+                
+                <div class="card job-card">
+                    <div class="job-header">
+                        <div class="job-company">
+                            <img src="logojob.png" alt="StartupXYZ" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <h3>Marketing Intern</h3>
+                                <p class="company-name">StartupXYZ</p>
+                            </div>
+                        </div>
+                        <div class="job-type">Internship</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="job-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Remote</span>
+                        </div>
+                        <div class="job-detail">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>$20/hour</span>
+                        </div>
+                        <div class="job-detail">
+                            <i class="fas fa-clock"></i>
+                            <span>Posted 3 days ago</span>
+                        </div>
+                    </div>
+                    <p class="job-description">Great opportunity for students to gain hands-on marketing experience in a fast-paced startup environment.</p>
+                    <div class="job-tags">
+                        <span class="job-tag">Social Media</span>
+                        <span class="job-tag">Content Creation</span>
+                        <span class="job-tag">Analytics</span>
+                    </div>
+                    <button class="btn btn-primary">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Search Tips -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Job Search Tips</h2>
+                <p>Maximize your chances of landing your dream job</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Optimize Your Resume</h3>
+                    <p>Tailor your resume for each position, highlighting relevant skills and experiences that match the job requirements.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="feature-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Leverage Alumni Network</h3>
+                    <p>Connect with alumni in your target industry. They can provide insights, referrals, and valuable career advice.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Practice Interviewing</h3>
+                    <p>Prepare for interviews by practicing common questions and researching the company thoroughly.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Continuous Learning</h3>
+                    <p>Stay updated with industry trends and consider additional certifications to enhance your skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%); color: white;">
+        <div class="container text-center">
+            <h2>Ready to Find Your Next Opportunity?</h2>
+            <p class="mb-6">Join thousands of alumni who have found their dream jobs through our network.</p>
+            <div class="hero-buttons">
+                <a href="job-avail.html" class="btn btn-primary">Browse Jobs</a>
+                <a href="job-add.html" class="btn btn-secondary">Post a Job</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>InsightAlly</h3>
+                    <p>Connecting students and alumni for a brighter future.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="networking-hub.html">Networking Hub</a></li>
+                        <li><a href="job-portal.html">Job Portal</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Alumni Directory</a></li>
+                        <li><a href="#">Mentorship Program</a></li>
+                        <li><a href="#">Career Guidance</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@insightally.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 University Ave</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 InsightAlly. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Coming Soon Modal -->
+    <div id="comingSoonModal" class="coming-soon-modal">
+        <div class="coming-soon-modal-content">
+            <span class="coming-soon-close" id="comingSoonClose">&times;</span>
+            <h2>Coming Soon!</h2>
+            <p>This feature/page is coming soon. Stay tuned!</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add active class to current nav item
+            const currentPage = window.location.pathname.split('/').pop();
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Coming Soon Modal Logic
+        const comingSoonLinks = document.querySelectorAll('.coming-soon');
+        const comingSoonModal = document.getElementById('comingSoonModal');
+        const comingSoonClose = document.getElementById('comingSoonClose');
+
+        comingSoonLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                comingSoonModal.style.display = 'flex';
+            });
+        });
+        comingSoonClose.addEventListener('click', function() {
+            comingSoonModal.style.display = 'none';
+        });
+        window.addEventListener('click', function(e) {
+            if (e.target === comingSoonModal) {
+                comingSoonModal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

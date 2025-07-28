@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - InsightAlly</title>
+    <link rel="stylesheet" href="modern-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <!-- Header logo link and size -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="insightally.png" alt="InsightAlly Logo">
+                </a>
+            </div>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="alumni-directory.html" class="coming-soon">Alumni Directory</a></li>
+                    <li><a href="networking-hub.html">Networking Hub</a></li>
+                    <li><a href="job-portal.html">Job Portal</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="success-stories.html" class="coming-soon">Success Stories</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="login.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p class="hero-subtitle">We'd love to hear from you. Get in touch with our team.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container" style="margin-left: 1.5rem;">
+            <div class="card-grid">
+                <!-- Contact Form -->
+                <div class="card">
+                    <h2>Send us a Message</h2>
+                    <p class="mb-6">Fill out the form below and we'll get back to you as soon as possible.</p>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <select id="subject" name="subject" class="form-input">
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    
+                    <div id="formMessage"></div>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="card">
+                    <h2>Get in Touch</h2>
+                    <p class="mb-6">We're here to help and answer any questions you might have.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@insightally.com</p>
+                                <p>support@insightally.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                                <p>+1 (555) 987-6543</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 University Avenue</p>
+                                <p>Engineering Building, Suite 200</p>
+                                <p>City, State 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                <p>Saturday: 10:00 AM - 2:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links mt-6">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about InsightAlly</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <h3>How do I join InsightAlly?</h3>
+                    <p>Simply click the "Sign Up" button and create your account. You'll need to provide your student or alumni information to verify your eligibility.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Is InsightAlly free to use?</h3>
+                    <p>Yes! InsightAlly is completely free for students and alumni. We believe in making networking and mentorship accessible to everyone.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>How can I connect with alumni?</h3>
+                    <p>You can browse our alumni directory, join networking events, or participate in mentorship programs to connect with experienced professionals.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Can I post job opportunities?</h3>
+                    <p>Absolutely! Alumni can post job opportunities and internships for current students. This helps create a bridge between education and employment.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>How do I report inappropriate content?</h3>
+                    <p>If you encounter any inappropriate content, please contact our support team immediately. We take community safety seriously.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Can I organize events?</h3>
+                    <p>Yes! Both students and alumni can propose and organize events. We encourage community-driven initiatives and collaboration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>InsightAlly</h3>
+                    <p>Connecting students and alumni for a brighter future.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="networking-hub.html">Networking Hub</a></li>
+                        <li><a href="job-portal.html">Job Portal</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Alumni Directory</a></li>
+                        <li><a href="#">Mentorship Program</a></li>
+                        <li><a href="#">Career Guidance</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@insightally.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 University Ave</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 InsightAlly. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Coming Soon Modal -->
+    <div id="comingSoonModal" class="coming-soon-modal">
+        <div class="coming-soon-modal-content">
+            <span class="coming-soon-close" id="comingSoonClose">&times;</span>
+            <h2>Coming Soon!</h2>
+            <p>This feature/page is coming soon. Stay tuned!</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add active class to current nav item
+            const currentPage = window.location.pathname.split('/').pop();
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Contact form handling
+            const contactForm = document.getElementById('contactForm');
+            const formMessage = document.getElementById('formMessage');
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(contactForm);
+                const name = formData.get('name');
+                const email = formData.get('email');
+                const phone = formData.get('phone');
+                const subject = formData.get('subject');
+                const message = formData.get('message');
+                
+                // Simple validation
+                if (!name || !email || !message) {
+                    formMessage.innerHTML = '<div class="alert alert-error">Please fill in all required fields.</div>';
+                    return;
+                }
+                
+                // Simulate form submission
+                formMessage.innerHTML = '<div class="alert alert-success">Thank you for your message! We\'ll get back to you soon.</div>';
+                contactForm.reset();
+                
+                // Clear success message after 5 seconds
+                setTimeout(() => {
+                    formMessage.innerHTML = '';
+                }, 5000);
+            });
+        });
+
+        // Coming Soon Modal Logic
+        const comingSoonLinks = document.querySelectorAll('.coming-soon');
+        const comingSoonModal = document.getElementById('comingSoonModal');
+        const comingSoonClose = document.getElementById('comingSoonClose');
+
+        comingSoonLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                comingSoonModal.style.display = 'flex';
+            });
+        });
+        comingSoonClose.addEventListener('click', function() {
+            comingSoonModal.style.display = 'none';
+        });
+        window.addEventListener('click', function(e) {
+            if (e.target === comingSoonModal) {
+                comingSoonModal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

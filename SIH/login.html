@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - InsightAlly</title>
+    <link rel="stylesheet" href="modern-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .login-container {
+            background: white;
+            border-radius: var(--border-radius-xl);
+            box-shadow: var(--shadow-xl);
+            padding: 3rem;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .login-header {
+            margin-bottom: 2rem;
+        }
+        
+        .login-header img {
+            height: 60px;
+            margin-bottom: 1rem;
+        }
+        
+        .login-header h1 {
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .login-header p {
+            color: var(--text-secondary);
+        }
+        
+        .login-options {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .login-option {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            border: 2px solid var(--border-color);
+            border-radius: var(--border-radius-lg);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+        
+        .login-option:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .login-option-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .login-option-content {
+            text-align: left;
+            flex: 1;
+        }
+        
+        .login-option-content h3 {
+            margin-bottom: 0.25rem;
+            color: var(--text-primary);
+        }
+        
+        .login-option-content p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: var(--font-size-sm);
+        }
+        
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 2rem 0;
+            color: var(--text-secondary);
+        }
+        
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        
+        .divider span {
+            padding: 0 1rem;
+            font-size: var(--font-size-sm);
+        }
+        
+        .guest-login {
+            margin-top: 2rem;
+        }
+        
+        .guest-login p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .back-home {
+            margin-top: 2rem;
+        }
+        
+        .back-home a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-home a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="insightally.png" alt="InsightAlly Logo">
+                </a>
+            </div>
+            <h1>Welcome to InsightAlly</h1>
+            <p>Choose your login type to continue</p>
+        </div>
+        
+        <div class="login-options">
+            <a href="loginstudent.html" class="login-option">
+                <div class="login-option-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <div class="login-option-content">
+                    <h3>Student Login</h3>
+                    <p>Current students can access networking opportunities, job postings, and mentorship programs.</p>
+                </div>
+                <i class="fas fa-chevron-right" style="color: var(--text-secondary);"></i>
+            </a>
+            
+            <a href="loginalumini.html" class="login-option">
+                <div class="login-option-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="login-option-content">
+                    <h3>Alumni Login</h3>
+                    <p>Alumni can connect with fellow graduates, post job opportunities, and mentor students.</p>
+                </div>
+                <i class="fas fa-chevron-right" style="color: var(--text-secondary);"></i>
+            </a>
+        </div>
+        
+        <div class="divider">
+            <span>or</span>
+        </div>
+        
+        <div class="guest-login">
+            <p>New to InsightAlly?</p>
+            <a href="signup.html" class="btn btn-primary">Create Account</a>
+        </div>
+        
+        <div class="back-home">
+            <a href="index.html">
+                <i class="fas fa-arrow-left"></i>
+                Back to Home
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects and animations
+            const loginOptions = document.querySelectorAll('.login-option');
+            
+            loginOptions.forEach(option => {
+                option.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-4px)';
+                });
+                
+                option.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
